@@ -1,6 +1,15 @@
+import { useState, useEffect } from "react";
+
 const Navigation = () => {
+    const [scroll, setScroll] = useState(false);
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setScroll(window.scrollY > 200);
+        });
+    }, []);
+
     return (
-        <nav id="navbar" className="navbar navbar-light darken-4 fixed-top">
+        <nav id="navbar" className= {scroll ? "navbar navbar-collapse navbar-light darken-4 fixed-top" : "navbar navbar-light darken-4 fixed-top"}>
             <div id="title-irminrics" className="navbar-brand">
                 <div className="icon irminrics-dp" />JUN KANG
             </div>

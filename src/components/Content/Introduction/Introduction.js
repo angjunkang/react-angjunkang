@@ -1,12 +1,11 @@
 import TypeItContent from "./TypeItContent"
-
+import Resume from "../../../images/ajk-resume.jpg"
 const Introduction = () => {
     return (
         <div id="intro-background">
             <div id="main-intro">
                 <div id="intro-div">
                     <div className="typeText">
-                        {/* <div className="content" /> */}
                         <TypeItContent />
                     </div>
                     <span className="intro-description">This site is still under construction. I am working hard to make this
@@ -15,9 +14,9 @@ const Introduction = () => {
                     </span>
                     <br />
                     <br />
-                    <form method="get" action="../images/ajkresume.jpg">
-                        <button className="btn btn-rounded resume-btn" type="submit">Resume</button>
-                    </form>
+                    <a href={Resume} download="angjunkang-resume">
+                        <button className="btn btn-rounded resume-btn">Resume</button>
+                    </a>
                 </div>
             </div>
         </div>

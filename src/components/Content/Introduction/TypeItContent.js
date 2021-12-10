@@ -15,7 +15,7 @@ const TypeItContent = () => {
 
                     return instance;
                 }}
-            />;
+            />
         </div>
     )
 }
