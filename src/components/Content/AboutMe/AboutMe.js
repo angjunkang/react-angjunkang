@@ -1,3 +1,6 @@
+import DisplayPicture from "../../../images/about-me-irminrics.png"
+import { Waypoint } from 'react-waypoint';
+
 const AboutMe = () => {
     return (
         <div id="about-me-div">
@@ -10,7 +13,7 @@ const AboutMe = () => {
             </h1>
             <div className="row about-me-box">
                 <div className="col-lg-5 col-md-12" id="about-me-picture-box">
-                    <img src="../images/about-me-irminrics.png" alt="Jun Kang's DP" id="about-me-picture" />
+                <img src={DisplayPicture} alt="Jun Kang's DP" id="about-me-picture"/>
                 </div>
                 <div className="col-lg-7 col-md-12" id="about-me-description-box">
                     <div id="about-me-description">
