@@ -1,7 +1,34 @@
 import DisplayPicture from "../../../images/about-me-irminrics.png"
-import { Waypoint } from 'react-waypoint';
+import { useState, useEffect } from "react";
+import React from "react"
+//import { Waypoint } from 'react-waypoint';
+import anime from 'animejs'
 
 const AboutMe = () => {
+    const animationRef = React.useRef(null);
+    React.useEffect(() => {
+        animationRef.current = anime.timeline({
+			loop: !1,
+			autoplay: !1
+		}).add({
+			targets: ".about .letter",
+			scale: [.3, 1],
+			opacity: [0, 1],
+			translateZ: 0,
+			easing: "easeOutExpo",
+			duration: 600,
+			delay: (e, t) => 70 * (t + 1)
+		}).add({
+			targets: ".about .line",
+			scaleX: [0, 1],
+			opacity: [.5, 1],
+			easing: "easeOutExpo",
+			duration: 700,
+			offset: "-=875",
+			delay: (e, t, n) => 80 * (n - t)
+		});
+    }, []);
+
     return (
         <div id="about-me-div">
             <h1 className="about">
@@ -13,7 +40,7 @@ const AboutMe = () => {
             </h1>
             <div className="row about-me-box">
                 <div className="col-lg-5 col-md-12" id="about-me-picture-box">
-                <img src={DisplayPicture} alt="Jun Kang's DP" id="about-me-picture"/>
+                    <img src={DisplayPicture} alt="Jun Kang's DP" id="about-me-picture" />
                 </div>
                 <div className="col-lg-7 col-md-12" id="about-me-description-box">
                     <div id="about-me-description">

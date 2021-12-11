@@ -4,7 +4,7 @@ const Navigation = () => {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScroll(window.scrollY > 200);
+            setScroll(window.scrollY > 150);
         });
     }, []);
 
@@ -15,10 +15,10 @@ const Navigation = () => {
             </div>
             <div id="nav-container-right">
                 <ul className="text-uppercase" id="nav-items">
-                    <li className="nav-item "><a id="nav-about" className="nav-link" onClick="scrollToAbout()" href="#/">About Me</a></li>
-                    <li className="nav-item"><a id="nav-experience" className="nav-link" onClick="scrollToExperience()" href="#/">Experience</a></li>
-                    <li className="nav-item"><a id="nav-awards" className="nav-link" onClick="scrollToAwards()" href="#/">Awards</a></li>
-                    <li className="nav-item"><a id="nav-contact" className="nav-link" onClick="scrollToContact()" href="#/">Contact</a></li>
+                    <li className="nav-item active-nav-item "><a id="nav-about" className="nav-link" href="#/">Portfolio</a></li>
+                    <li className="nav-item"><a id="nav-experience" className="nav-link" href="#/">Resume</a></li>
+                    <li className="nav-item"><a id="nav-awards" className="nav-link" href="#/">About Me</a></li>
+                    <li className="nav-item"><a id="nav-contact" className="nav-link" href="#/">Contact</a></li>
                 </ul>
             </div>
         </nav>

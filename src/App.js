@@ -16,7 +16,6 @@ import './css/homepage.css';
 import Navigation from "./components/Navigation/Navigation";
 import Progress from "./components/Navigation/Progress"
 import Introduction from './components/Content/Introduction/Introduction';
-import AboutMe from './components/Content/AboutMe/AboutMe';
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
       <Navigation />
       <Progress />
       <Introduction />
-      <AboutMe />
     </>
   )
 }
