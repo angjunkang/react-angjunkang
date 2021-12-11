@@ -11,7 +11,7 @@ const Introduction = () => {
                     </span>
                     <br />
                     <br />
-                    <button>Check out my projects!</button>
+                    <div className="button">Check out my work</div>
                 </div>
             </div>
         </div>

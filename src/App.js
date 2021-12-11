@@ -16,6 +16,7 @@ import './css/homepage.css';
 import Navigation from "./components/Navigation/Navigation";
 import Progress from "./components/Navigation/Progress"
 import Introduction from './components/Content/Introduction/Introduction';
+import Projects from './components/Content/Projects/Projects';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Navigation />
       <Progress />
       <Introduction />
+      <Projects />
     </>
   )
 }
