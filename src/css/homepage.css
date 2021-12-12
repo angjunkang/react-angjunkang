@@ -301,6 +301,15 @@ a.active:after {
     float: left;
 }
 
-.image {
+.projects-image img {
     padding: 0 20px 0 20px;
+    -webkit-animation-delay: 0.25s !important;
+    animation-delay: 0.25s !important;
+    -webkit-transition: all 0.65s;
+    -o-transition: all 0.65s;
+    transition: all 0.65s;
+}
+
+.projects-image img:hover {
+    transform: scale(1.10);
 }

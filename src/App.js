@@ -13,8 +13,8 @@ import './css/homepage.css';
 // import './js/typeit.min.js'
 // import './js/homepage.js'
 
-import Navigation from "./components/Navigation/Navigation";
-import Progress from "./components/Navigation/Progress"
+import Navigation from "./components/Header/Navigation";
+import Progress from "./components/Header/Progress"
 import Introduction from './components/Content/Introduction/Introduction';
 import Projects from './components/Content/Projects/Projects';
 import Footer from './components/Footer/Footer';
