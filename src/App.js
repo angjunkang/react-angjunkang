@@ -17,6 +17,7 @@ import Navigation from "./components/Navigation/Navigation";
 import Progress from "./components/Navigation/Progress"
 import Introduction from './components/Content/Introduction/Introduction';
 import Projects from './components/Content/Projects/Projects';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Progress />
       <Introduction />
       <Projects />
+      <Footer />
     </>
   )
 }

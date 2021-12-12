@@ -1,4 +1,6 @@
 import TypeItContent from "./TypeItContent"
+import { Link } from 'react-scroll'
+
 const Introduction = () => {
     return (
         <div id="intro-background">
@@ -11,7 +13,7 @@ const Introduction = () => {
                     </span>
                     <br />
                     <br />
-                    <div className="button center">Check out my work</div>
+                    <Link to="projects-div" spy={true} smooth={true}><div className="button center">Check out my work</div></Link>
                 </div>
             </div>
         </div>

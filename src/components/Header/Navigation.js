@@ -3,6 +3,9 @@ import { useState, useEffect } from "react";
 const Navigation = () => {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
+        const position = window.pageYOffset;
+        setScroll(position);
+
         window.addEventListener("scroll", () => {
             setScroll(window.scrollY > 10);
         });
