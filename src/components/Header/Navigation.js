@@ -12,7 +12,7 @@ const Navigation = () => {
     }, []);
 
     return (
-        <nav id="navbar" className= {scroll ? "navbar navbar-collapse navbar-light darken-4 fixed-top" : "navbar navbar-light darken-4 fixed-top"}>
+        <nav id="navbar" className={`navbar navbar-light darken-4 fixed-top ${scroll ? 'navbar-collapse' : ''}`}>
             <div id="title-irminrics" className="navbar-brand">
                 <div className="icon irminrics-dp" />JUN KANG
             </div>

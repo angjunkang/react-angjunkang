@@ -252,7 +252,7 @@ a.active:after {
     padding-top: 100px;
 }
 
-.projects-container-wrapper {
+.container-wrapper {
     width: 90%;
     margin: 0 auto;
     max-width: 1100px;
@@ -272,7 +272,6 @@ a.active:after {
 .projects-header {
     font-family: miso-bold, sans-serif;
     font-size: 1.9em;
-    font-weight: bolder;
 }
 
 .projects-description {
@@ -312,4 +311,48 @@ a.active:after {
 
 .projects-image img:hover {
     transform: scale(1.10);
+}
+
+.fadeIn {
+    opacity: 0;
+    visibility: none;
+    -webkit-animation-delay: 0.25s !important;
+    animation-delay: 0.25s !important;
+    -webkit-transition: all 0.65s;
+    -o-transition: all 0.65s;
+    transition: all 0.65s;
+}
+
+.fadeIn.visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+#contact {
+    font-family: miso-bold, sans-serif;
+    font-size: 3.25em;
+}
+
+#contact:hover {
+    color: #888;
+}
+
+.footer-div {
+    padding: 58px 0 58px 0;
+    width: 55%;
+}
+
+.footer-header {
+    font-family: miso, sans-serif;
+    font-size: 1.6em;
+}
+
+.footer-text {
+    font-family: miso, sans-serif;
+    font-size: 1.2em;
+}
+
+.social-icons {
+    padding-right: 10px;
 }
