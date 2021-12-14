@@ -1,4 +1,5 @@
 import PickupLines from "./PickupLines"
+import Weather from "./Weather"
 
 const Projects = () => {
     return (
@@ -6,6 +7,7 @@ const Projects = () => {
             <div className="container-wrapper">
                 <div id="projects-div-header" className="text-uppercase"> Featured Projects </div>
                 <PickupLines />
+                <Weather />
             </div>
         </div>
     )
