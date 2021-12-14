@@ -46,7 +46,7 @@ html {
 
 #navbar.navbar-collapse {
     padding-top: 2px;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
     transition: padding-top .3s ease-in-out, padding-bottom .3s ease-in-out
 }
 
@@ -63,7 +63,6 @@ html {
     letter-spacing: .0125em;
     padding: 0 10px 0 10px
 }
-
 
 .active-nav-item {
     font-family: miso-bold, sans-serif;
@@ -239,10 +238,21 @@ li {
     font-size: 20px
 }
 
+#about-div {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    padding: 130px 0 70px 0;
+    margin: auto;
+    text-align: center;
+    font-size: 20px
+}
+
 #projects-div-header {
+    padding: 0;
     width: 100%;
     letter-spacing: 01px;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-family: miso, sans-serif;
     margin: 0 auto;
     text-align: left;
@@ -266,7 +276,7 @@ li {
 }
 
 .container-wrapper {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     max-width: 1100px;
     height: 100%;
@@ -387,3 +397,26 @@ li {
     background-position: 0 480%;
 }
 
+#about-div {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    padding: 130px 0 70px 0;
+    margin: auto;
+    text-align: center;
+}
+
+.description-div {
+    padding: 90px 0 70px 0;
+}
+
+.description-text {
+    font-family: miso, sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#about-me-picture {
+    padding-top: 10px;
+}
