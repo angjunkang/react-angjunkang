@@ -15,9 +15,9 @@ const PickupLines = () => {
 
     return (
         <div className={`projects-container fadeIn ${isVisible ? 'visible' : ''}`} >
-            <div className="projects-text left">
-                <h3 className="projects-header">Pickup Lines</h3>
-                <p className="projects-description">An IOS app with access to pickup lines on your fingertips done using SwiftUI! Get access to a bunch of pickup lines with a single tap.</p>
+            <div className="text left">
+                <h3 className="section-header">Pickup Lines</h3>
+                <p className="description">An IOS app with access to pickup lines on your fingertips done using SwiftUI! Get access to a bunch of pickup lines with a single tap.</p>
                 <h5 className="projects-badge">Swift</h5>
                 <div className="projects-button button">Find out more</div>
             </div>

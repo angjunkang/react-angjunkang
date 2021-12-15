@@ -282,7 +282,7 @@ li {
     height: 100%;
 }
 
-.projects-text {
+.text {
     font-family: miso, sans-serif;
     width: 40%;
     text-align: justify;
@@ -291,12 +291,12 @@ li {
     transition: font-size .3s ease-in-out;
 }
 
-.projects-header {
+.section-header {
     font-family: miso-bold, sans-serif;
     font-size: 1.9em;
 }
 
-.projects-description {
+.description {
     color: #888;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -423,4 +423,13 @@ li {
 
 #about-me-picture {
     padding-top: 10px;
+}
+
+.education-content {
+    padding-top: 20px;
+}
+
+.about-title {
+    margin: 0;
+    font-size: 1.3em;
 }
