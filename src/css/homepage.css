@@ -410,6 +410,10 @@ li {
     padding: 90px 0 70px 0;
 }
 
+.description-picture {
+    padding-right: 100px;
+}
+
 .description-text {
     font-family: miso, sans-serif;
     font-size: 1.2em;

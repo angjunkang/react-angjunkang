@@ -3,6 +3,7 @@ import Progress from "../components/Header/Progress";
 import Wallpaper from "../components/Content/Introduction/Wallpaper";
 import Description from "../components/Content/About/Description";
 import Footer from '../components/Footer/Footer';
+import Education from "../components/Content/About/Education";
 
 const AboutPage = () => {
     return (
@@ -14,6 +15,7 @@ const AboutPage = () => {
                 <div className="container-wrapper">
                     <div id="projects-div-header" className="text-uppercase"> About Me </div>
                     <Description />
+                    <Education />
                 </div>
             </div>
             <Footer />
