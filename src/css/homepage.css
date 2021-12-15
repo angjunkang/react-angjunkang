@@ -282,7 +282,7 @@ li {
     height: 100%;
 }
 
-.text {
+.projects-text {
     font-family: miso, sans-serif;
     width: 40%;
     text-align: justify;
@@ -423,6 +423,19 @@ li {
 
 #about-me-picture {
     padding-top: 10px;
+}
+
+.education-text {
+    font-family: miso, sans-serif;
+    width: 60%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.15em;
+    transition: font-size .3s ease-in-out;
+}
+
+.education-icon {
+    padding-right: 20px;
 }
 
 .education-content {

@@ -15,7 +15,7 @@ const Weather = () => {
 
     return (
         <div className={`projects-container fadeIn ${isVisible ? 'visible' : ''}`} >
-            <div className="text right">
+            <div className="projects-text right">
                 <h3 className="section-header">Weather</h3>
                 <p className="description">A Weather IOS app done using SwiftUI! Check the weather for your favourite countries easily anytime and anywhere.</p>
                 <h5 className="projects-badge">Swift</h5>
