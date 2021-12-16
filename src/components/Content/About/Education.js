@@ -17,7 +17,7 @@ const Schools = ({ school, image, description, date }) => {
     return (
         <div className="education-content">
             <img className='education-icon left' src={image} alt="" />
-            <div>
+            <div className='education-description'>
                 <p class="about-title">{school}</p>
                 <div className="description">{description}
                     <p>{date}</p> </div>

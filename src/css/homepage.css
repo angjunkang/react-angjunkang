@@ -219,6 +219,7 @@ li {
     transition: all 0.4s;
     width: fit-content;
     border-bottom: 3px solid #111;
+    color: #111;
 }
 
 .button:hover {
@@ -394,7 +395,7 @@ li {
     background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/city-cars.gif);
     background-size: cover;
     background-attachment: fixed;
-    background-position: 0 480%;
+    background-position: 0 425%;
 }
 
 #about-div {
@@ -435,11 +436,26 @@ li {
 }
 
 .education-icon {
-    padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
+    /* border-radius */
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    border-radius: 90px;
+    /* box-shadow */
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 0 5px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 5px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 5px;
 }
 
 .education-content {
+    min-height: 100px;
+    overflow: hidden;
     padding-top: 20px;
+}
+
+.education-description {
+    float: left;
 }
 
 .about-title {
