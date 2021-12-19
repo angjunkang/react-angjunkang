@@ -294,7 +294,8 @@ li {
 
 .section-header {
     font-family: miso-bold, sans-serif;
-    font-size: 2.1em;
+    font-size: 2.3em;
+    letter-spacing: .0125em;
 }
 
 .description {
@@ -426,12 +427,18 @@ li {
     padding-top: 10px;
 }
 
+.education-div {
+    min-height: 100px;
+    overflow: hidden;
+    padding: 60px 0 30px 0;
+}
+
 .education-text {
     font-family: miso, sans-serif;
     width: 60%;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 1.15em;
+    font-size: 1em;
     transition: font-size .3s ease-in-out;
 }
 
