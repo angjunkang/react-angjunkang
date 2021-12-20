@@ -410,6 +410,8 @@ li {
 
 .description-div {
     padding: 90px 0 70px 0;
+    min-height: 100px;
+    overflow: hidden;
 }
 
 .description-picture {
@@ -430,12 +432,11 @@ li {
 .education-div {
     min-height: 100px;
     overflow: hidden;
-    padding: 60px 0 30px 0;
+    padding-top: 60px;
 }
 
 .education-text {
     font-family: miso, sans-serif;
-    width: 60%;
     text-align: justify;
     text-justify: inter-word;
     font-size: 1em;
@@ -443,8 +444,11 @@ li {
 }
 
 .education-icon {
+    margin-top: 10px;
+    width: 99px;
+    height: 99px;
     margin-left: 5px;
-    margin-right: 20px;
+    margin-right: 30px;
     /* border-radius */
     -webkit-border-radius: 90px;
     -moz-border-radius: 90px;
@@ -467,5 +471,30 @@ li {
 
 .about-title {
     margin: 0;
-    font-size: 1.3em;
+    font-size: 1.4em;
+}
+
+.about-content-left {
+    width: 55%;
+    float: left;
+}
+
+.about-content-right {
+    width: 45%;
+    float: left;
+}
+
+.about-badge {
+    font-family: miso-bold, sans-serif;
+    color: white;
+    padding: 5px 15px;
+    width: fit-content;
+    border-radius: 28px;
+    margin-right: 10px;
+    background-color: #222;
+    float: left;
+}
+
+.about-badge-div {
+    
 }

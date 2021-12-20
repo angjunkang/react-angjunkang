@@ -51,7 +51,7 @@ const NavigationItems = ({ isMainPage, scroll }) => {
             <>
                 <ul className="text-uppercase" id="nav-items">
                     <li className="nav-item active-nav-item "><LinkScroll to="projects-div" spy={true} smooth={true}><a className="nav-link active-nav-link" href="#/">Portfolio</a></LinkScroll></li>
-                    <li className="nav-item"><LinkNav to="/about"><a className="nav-link" href="#/">About Me</a></LinkNav></li>
+                    <li className="nav-item"><LinkNav to="/about"><a className="nav-link" href="#/">About</a></LinkNav></li>
                     <li className="nav-item"><LinkScroll to="footer-div" spy={true} smooth={true}><a className="nav-link" href="#/">Contact</a></LinkScroll></li>
                     <li className="nav-item"><a className="nav-link" href={Resume} target='_blank' rel='noopener noreferrer'>Resume</a></li>
                 </ul>
@@ -62,7 +62,7 @@ const NavigationItems = ({ isMainPage, scroll }) => {
             <>
                 <ul className="text-uppercase" id="nav-items">
                     <li className="nav-item"><LinkNav to="/"><a className="nav-link" href="#/">Portfolio</a></LinkNav></li>
-                    <li className="nav-item active-nav-item"><LinkScroll to="about-div" spy={true} smooth={true}><a className="nav-link active-nav-link" href="#/">About Me</a></LinkScroll></li>
+                    <li className="nav-item active-nav-item"><LinkScroll to="about-div" spy={true} smooth={true}><a className="nav-link active-nav-link" href="#/">About</a></LinkScroll></li>
                     <li className="nav-item"><LinkScroll to="footer-div" spy={true} smooth={true}><a className="nav-link" href="#/">Contact</a></LinkScroll></li>
                     <li className="nav-item"><a className="nav-link" href={Resume} target='_blank' rel='noopener noreferrer'>Resume</a></li>
                 </ul>
@@ -74,7 +74,7 @@ const NavigationItems = ({ isMainPage, scroll }) => {
             <>
                 <ul className="text-uppercase" id="nav-items">
                     <li className="nav-item"><LinkNav to="/"><a className="nav-link white-text" href="#/">Portfolio</a></LinkNav></li>
-                    <li className="nav-item active-nav-item"><LinkScroll to="about-div" spy={true} smooth={true}><a className="nav-link active-nav-link white-text" href="#/">About Me</a></LinkScroll></li>
+                    <li className="nav-item active-nav-item"><LinkScroll to="about-div" spy={true} smooth={true}><a className="nav-link active-nav-link white-text" href="#/">About</a></LinkScroll></li>
                     <li className="nav-item"><LinkScroll to="footer-div" spy={true} smooth={true}><a className="nav-link white-text" href="#/">Contact</a></LinkScroll></li>
                     <li className="nav-item"><a className="nav-link white-text" href={Resume} target='_blank' rel='noopener noreferrer'>Resume</a></li>
                 </ul>

@@ -17,13 +17,14 @@ const AboutPage = () => {
                 <div className="container-wrapper">
                     <div id="projects-div-header" className="text-uppercase"> About Me </div>
                     <Description />
-                    <div>
+                    <div className="about-content-left">
                     <Education />
                     <Experience />
                     </div>
-                    <div>
+                    <div className="about-content-right">
                     <Skills />
                     </div>
+                    
                 </div>
             </div>
             <Footer />
