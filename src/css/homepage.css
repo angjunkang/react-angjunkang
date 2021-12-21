@@ -493,8 +493,14 @@ li {
     margin-right: 10px;
     background-color: #222;
     float: left;
+    font-size: 18px;
+}
+
+.section-badge-div {
+    min-height: 100px;
+    overflow: hidden;
 }
 
 .about-badge-div {
-    
+    width: 85%;
 }
