@@ -1,8 +1,19 @@
 import DisplayPicture from '../../../images/about-me-irminrics.png'
+import { useState, useEffect } from 'react'
 
 const Description = () => {
+    const [isVisible, setVisible] = useState(false);
+    useEffect(() => {
+        const position = window.pageYOffset;
+        setVisible(position);
+
+        window.addEventListener("scroll", () => {
+            setVisible(window.scrollY > 100);
+        });
+    }, []);
+    
     return (
-        <div className='description-div row'>
+        <div className={`description-div row fadeIn ${isVisible ? 'visible' : ''}`} >
             <div className="description-header"></div>
             <div className="description-picture col-lg-6 col-md-12">
                 <img src={DisplayPicture} alt="Jun Kang's DP" id="about-me-picture" />

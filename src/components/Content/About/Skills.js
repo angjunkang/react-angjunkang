@@ -1,6 +1,18 @@
+import { useState, useEffect } from 'react'
+
 const Skills = () => {
+    const [isVisible, setVisible] = useState(false);
+    useEffect(() => {
+        const position = window.pageYOffset;
+        setVisible(position);
+
+        window.addEventListener("scroll", () => {
+            setVisible(window.scrollY > 900);
+        });
+    }, []);
+
     return (
-        <div className="education-div">
+        <div className={`education-div fadeIn ${isVisible ? 'visible' : ''}`} >
             <div className="education-text left">
                 <h3 className="section-header">Skills</h3>
                 <div className="education-content">
