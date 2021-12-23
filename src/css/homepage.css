@@ -521,11 +521,12 @@ li {
 
 @media only screen and (max-width:640px) {
     .typeText {
-		font-size: 2.75em
+		font-size: 2.2em;
+        margin-bottom: 20px;
 	}
     
     .intro-description {
-        font-size: 1.15em;
+        font-size: 1.1em;
     }
 
     .button {
