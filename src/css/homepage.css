@@ -505,10 +505,6 @@ li {
     width: 85%;
 }
 
-.hidden {
-
-}
-
 @media only screen and (max-width:682px) {
     #portfolio-nav {
         display: none;
@@ -517,9 +513,7 @@ li {
     #contact-nav {
         display: none;
     }
-}
 
-@media only screen and (max-width:640px) {
     .typeText {
 		font-size: 2.2em;
         margin-bottom: 20px;
@@ -543,7 +537,17 @@ li {
     }
 }
 
-@media (min-width:640px) and (max-width:870px) {
+@media only screen and (max-width:770px) {
+    #contact {
+        font-size: 2.6em;
+    }
+
+    .footer-div {
+        width: 100%
+    }
+}
+
+@media (min-width:682px) and (max-width:870px) {
     .typeText {
 		font-size: 3.5em
 	}
