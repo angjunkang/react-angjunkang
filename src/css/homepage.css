@@ -510,12 +510,30 @@ li {
 }
 
 @media only screen and (max-width:682px) {
+    #portfolio-nav {
+        display: none;
+    }
+
     #contact-nav {
         display: none;
     }
 }
 
-@media only screen and (max-width:870px) {
+@media only screen and (max-width:640px) {
+    .typeText {
+		font-size: 2.5em
+	}
+    
+    .intro-description {
+        font-size: 1.25em;
+    }
+
+    .button {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:640px) and (max-width:870px) {
     .typeText {
 		font-size: 3.5em
 	}
