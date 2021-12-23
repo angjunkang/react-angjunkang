@@ -521,15 +521,24 @@ li {
 
 @media only screen and (max-width:640px) {
     .typeText {
-		font-size: 2.5em
+		font-size: 2.75em
 	}
     
     .intro-description {
-        font-size: 1.25em;
+        font-size: 1.15em;
     }
 
     .button {
         font-size: 15px;
+    }
+
+    .nav-item {
+        font-size: 1.5em;
+    }
+
+    #title-irminrics {
+        font-size: 1.5em;
+        line-height: 48px;
     }
 }
 
