@@ -11,6 +11,11 @@ const PickupLines = () => {
         window.addEventListener("scroll", () => {
             setVisible(window.scrollY > 600);
         });
+
+        return () => {
+            setVisible({});
+        };
+
     }, []);
 
     return (

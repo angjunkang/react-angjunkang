@@ -11,6 +11,11 @@ const Education = () => {
         window.addEventListener("scroll", () => {
             setVisible(window.scrollY > 900);
         });
+
+        return () => {
+            setVisible({});
+        };
+
     }, []);
 
     return (
@@ -29,7 +34,7 @@ const Schools = ({ school, image, description, date }) => {
         <div className="education-content">
             <img className='education-icon left' src={image} alt="" />
             <div className='education-description'>
-                <p class="about-title">{school}</p>
+                <p className="about-title">{school}</p>
                 <div className="description">{description}
                     <p>{date}</p> </div>
             </div>

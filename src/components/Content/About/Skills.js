@@ -9,6 +9,11 @@ const Skills = () => {
         window.addEventListener("scroll", () => {
             setVisible(window.scrollY > 900);
         });
+
+        return () => {
+            setVisible({});
+        };
+        
     }, []);
 
     return (
@@ -18,7 +23,7 @@ const Skills = () => {
                 <div className="education-content">
                     <div className="section-badge-div">
                         <p className="about-title">General</p>
-                        <div class="about-badge-div mt-3">
+                        <div className="about-badge-div mt-3">
                             <h5 className="about-badge">HTML/CSS</h5>
                             <h5 className="about-badge">Python</h5>
                             <h5 className="about-badge">Java</h5>
@@ -32,7 +37,7 @@ const Skills = () => {
                     </div>
                     <div className="section-badge-div mt-3">
                         <p className="about-title">Database</p>
-                        <div class="about-badge-div mt-3">
+                        <div className="about-badge-div mt-3">
                             <h5 className="about-badge">SQL Developer</h5>
                             <h5 className="about-badge">MySQL</h5>
                             <h5 className="about-badge">Redis</h5>
@@ -41,7 +46,7 @@ const Skills = () => {
                     </div>
                     <div className="section-badge-div mt-3">
                         <p className="about-title">Others</p>
-                        <div class="about-badge-div mt-3">
+                        <div className="about-badge-div mt-3">
                             <h5 className="about-badge">React</h5>
                             <h5 className="about-badge">NodeJS</h5>
                             <h5 className="about-badge">Bootstrap</h5>

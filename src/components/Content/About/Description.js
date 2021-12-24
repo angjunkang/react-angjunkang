@@ -10,6 +10,11 @@ const Description = () => {
         window.addEventListener("scroll", () => {
             setVisible(window.scrollY > 100);
         });
+
+        return () => {
+            setVisible({});
+        };
+        
     }, []);
     
     return (

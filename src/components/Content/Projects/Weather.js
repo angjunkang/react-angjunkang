@@ -11,6 +11,11 @@ const Weather = () => {
         window.addEventListener("scroll", () => {
             setVisible(window.scrollY > 1100);
         });
+
+        return () => {
+            setVisible({});
+        };
+
     }, []);
 
     return (

@@ -1,8 +1,32 @@
 import { useState, useEffect } from "react";
 
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  }
+  
+function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+  
+    return windowDimensions;
+  }
+
 const Progress = ({ isMainPage }) => {
     const [progress, setProgress] = useState(0);
     const [scroll, setScroll] = useState(false);
+    const { width } = useWindowDimensions();
 
     useEffect(() => {
         const position = window.pageYOffset;
@@ -20,12 +44,15 @@ const Progress = ({ isMainPage }) => {
         setScroll(position);
 
         window.addEventListener("scroll", () => {
-            if (isMainPage) {
+            if (isMainPage || width < 905) {
                 setScroll(window.scrollY > 10);
             } else {
                 setScroll(window.scrollY > 285);
             }
         });
+        return () => {
+            setScroll({});
+        };
         // eslint-disable-next-line
     }, []);
 
