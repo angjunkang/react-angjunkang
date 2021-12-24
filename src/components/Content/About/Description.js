@@ -8,7 +8,7 @@ const Description = () => {
         setVisible(position);
 
         window.addEventListener("scroll", () => {
-            setVisible(window.scrollY > 100);
+            setVisible(window.scrollY > 50);
         });
 
         return () => {

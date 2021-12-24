@@ -61,13 +61,13 @@ const NavigationLeft = ({ isMainPage, scroll, width }) => {
     if (isMainPage || scroll || width < 905) {
         return (
             <div id="title-irminrics" className="navbar-brand">
-                <div className="icon irminrics-dp" />JUN KANG
+                <LinkNav to="/" className="irminrics-link"> <div className="icon irminrics-dp" />JUN KANG </LinkNav>
             </div>
         )
     } else {
         return (
             <div id="title-irminrics" className="navbar-brand white-text">
-                <div className="icon irminrics-dp" />JUN KANG
+                <LinkNav to="/" className="irminrics-link white-text"> <div className="icon irminrics-dp" />JUN KANG </LinkNav>
             </div>
         )
     }

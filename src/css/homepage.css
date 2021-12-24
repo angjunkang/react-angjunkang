@@ -96,6 +96,14 @@ html {
     float: left
 }
 
+.irminrics-link {
+    color: #222;
+}
+
+.irminrics-link:hover {
+    color: #222;
+}
+
 ::-webkit-scrollbar {
     display: none
 }
