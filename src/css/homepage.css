@@ -537,16 +537,26 @@ li {
         font-size: 1.5em;
         line-height: 48px;
     }
+    #about-me-picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .description-div {
+        padding: 0px;
+    }
     .description-picture {
         transform: scale(0.6, 0.6);
         -ms-transform: scale(0.6, 0.6);
         -webkit-transform: scale(0.6, 0.6);
+        padding: 0;
     }
-
     .description-text {
         font-size: 1em;
         padding-top: -50px;
     }
+    
 }
 
 @media only screen and (max-width:770px) {
@@ -577,9 +587,6 @@ li {
     .progress-bar {
         display: block;
     }
-    .description-div {
-        padding-top: 40px;
-    }
 }
 
 @media (min-width:682px) and (max-width:905px) {
@@ -591,10 +598,13 @@ li {
 }
 
 @media (min-width:682px) and (max-width:1200px) {
+    .description-text {
+        padding-top: 60px;
+    }
     .description-picture {
         padding: 0;
-        padding-bottom: 50px;
     }
+
 }
 
 
