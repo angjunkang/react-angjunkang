@@ -20,10 +20,10 @@ const Description = () => {
     return (
         <div className={`description-div row fadeIn ${isVisible ? 'visible' : ''}`} >
             <div className="description-header"></div>
-            <div className="description-picture col-lg-6 col-md-12">
+            <div className="description-picture col-xl-6 col-lg-12">
                 <img src={DisplayPicture} alt="Jun Kang's DP" id="about-me-picture" />
             </div>
-            <div className="description-text col-lg-6 col-md-12">
+            <div className="description-text col-xl-6 col-lg-12">
                 <div className='description-text-wrapper'>
                     <p>Hello there, I am Jun Kang, a Year 1 Computer Science student at National University of Singapore.
                     </p>
