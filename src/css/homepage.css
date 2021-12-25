@@ -556,7 +556,15 @@ li {
         font-size: 1em;
         padding-top: -50px;
     }
-    
+    .section-header {
+        font-size: 1.9em;
+    }
+    .education-icon {
+        display: none;
+    }
+    .about-title {
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (max-width:770px) {
@@ -564,7 +572,8 @@ li {
         font-size: 2.6em;
     }
     .footer-div {
-        width: 100%
+        width: 100%;
+        font-size: 0.8em;
     }
 }
 
@@ -604,8 +613,18 @@ li {
     .description-picture {
         padding: 0;
     }
-
 }
+
+@media only screen and (max-width:1200px) {
+    .about-content-left {
+        width: 100%;
+    }
+    .about-content-right {
+        width: 100%;
+    }
+}
+
+
 
 
 /* @media only screen and (max-width:1325px) {
