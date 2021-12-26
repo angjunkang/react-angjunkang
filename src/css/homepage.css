@@ -379,7 +379,7 @@ li {
 }
 
 .footer-div {
-    padding-bottom: 58px;
+    padding-bottom: 28px;
     width: 55%;
 }
 
@@ -547,9 +547,9 @@ li {
         padding: 0px;
     }
     .description-picture {
-        transform: scale(0.6, 0.6);
-        -ms-transform: scale(0.6, 0.6);
-        -webkit-transform: scale(0.6, 0.6);
+        transform: scale(0.75, 0.75);
+        -ms-transform: scale(0.75, 0.75);
+        -webkit-transform: scale(0.75, 0.75);
         padding: 0;
     }
     .description-text {
@@ -557,13 +557,13 @@ li {
         padding-top: -50px;
     }
     .section-header {
-        font-size: 1.9em;
+        font-size: 1.8em;
     }
     .education-icon {
         display: none;
     }
     .about-title {
-        font-size: 1.2em;
+        font-size: 1.15em;
     }
 }
 
