@@ -562,6 +562,9 @@ li {
     .education-icon {
         display: none;
     }
+    .description {
+        padding: 0;
+    }
     .about-title {
         font-size: 1.15em;
     }
@@ -634,4 +637,8 @@ li {
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
     }
+
+    flex-direction: column;
+    display: flex;
 } */
+

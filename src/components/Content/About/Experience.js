@@ -22,7 +22,7 @@ const Experience = () => {
         <div className={`education-div fadeIn ${isVisible ? 'visible' : ''}`} >
             <div className="education-text left">
                 <h3 className="section-header">Experience</h3>
-                <Company company={"Centre for Strategic Infocomm Technologies"} image={CSIT} description={"Internship"} date={"May 2018 - Jul 2018"} />
+                <Company company={"Centre for Strategic Infocomm Technologies"} image={CSIT} description={"Bonded Internship"} date={"May 2018 - Jul 2018"} />
                 <Company company={"Cyber Security Researchers of Waikato"} image={CROW} description={"Overseas Internship Programme"} date={"Mar 2018 - May 2018"} />
             </div>
         </div>
