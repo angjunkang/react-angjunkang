@@ -1,8 +1,33 @@
 import DisplayPicture from '../../../images/about-me-irminrics.png'
 import { useState, useEffect } from 'react'
 
+function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+        width,
+        height
+    };
+}
+
+function useWindowDimensions() {
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return windowDimensions;
+}
+
 const Description = () => {
     const [isVisible, setVisible] = useState(false);
+    const { width } = useWindowDimensions();
+
     useEffect(() => {
         const position = window.pageYOffset;
         setVisible(position);
@@ -18,7 +43,7 @@ const Description = () => {
     }, []);
     
     return (
-        <div className={`description-div row fadeIn ${isVisible ? 'visible' : ''}`} >
+        <div className={`description-div row fadeIn ${isVisible || width < 905  ? 'visible' : ''}`} >
             <div className="description-header"></div>
             <div className="description-picture col-xl-6 col-lg-12">
                 <img src={DisplayPicture} alt="Jun Kang's DP" id="about-me-picture" />
