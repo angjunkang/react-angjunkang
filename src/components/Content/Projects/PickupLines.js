@@ -23,12 +23,12 @@ const PickupLines = () => {
             <div className="projects-text left">
                 <h3 className="section-header">Pickup Lines</h3>
                 <p className="description">An IOS app with access to pickup lines on your fingertips done using SwiftUI. Get access to a bunch of pickup lines with a single tap.</p>
-                <h5 className="projects-badge">Swift</h5>
+                <h5 className="projects-badge-swift">Swift</h5>
                 <div className="projects-button"><a className='button' href="https://github.com/Irminrics/pickup-lines-swift" target='_blank' rel='noopener noreferrer'>Find out more</a></div>
             </div>
             <div className='projects-image right'>
-                <img className='image' alt="Pickup Lines Screenshot 1" src={PickupLinesImage1} />
-                <img className='image' alt="Pickup Lines Screenshot 2" src={PickupLinesImage2} />
+                <img className='image px-4' alt="Pickup Lines Screenshot 1" src={PickupLinesImage1} />
+                <img className='image px-4' alt="Pickup Lines Screenshot 2" src={PickupLinesImage2} />
             </div>
         </div>
     )

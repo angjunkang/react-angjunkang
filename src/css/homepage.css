@@ -312,7 +312,7 @@ li {
     padding-bottom: 10px;
 }
 
-.projects-badge {
+.projects-badge-swift {
     font-family: miso-bold, sans-serif;
     color: white;
     padding: 5px 15px;
@@ -320,6 +320,16 @@ li {
     border-radius: 28px;
     margin-right: 10px;
     background-color: #F05138;
+}
+
+.projects-badge-react {
+    font-family: miso-bold, sans-serif;
+    color: white;
+    padding: 5px 15px;
+    width: fit-content;
+    border-radius: 28px;
+    margin-right: 10px;
+    background-color: #0088CC;
 }
 
 .projects-button {
@@ -340,7 +350,6 @@ li {
 }
 
 .projects-image img {
-    padding: 0 25px 0 25px;
     -webkit-animation-delay: 0.25s !important;
     animation-delay: 0.25s !important;
     -webkit-transition: all 0.65s;
@@ -350,6 +359,13 @@ li {
 
 .projects-image img:hover {
     transform: scale(1.10);
+}
+
+.site {
+    width: 85%;
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .13);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .13);
+    padding: 0;
 }
 
 .fadeIn {
@@ -681,6 +697,14 @@ li {
     .projects-text {
         padding-top: 20px;
         width: 100%;
+    }
+
+    .site {
+        width: 85%;
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .13);
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .13);
+        padding: 0;
+        margin-bottom: 50px;
     }
 }
 

@@ -1,5 +1,6 @@
 import PickupLines from "./PickupLines"
 import Weather from "./Weather"
+import Skylab from "./Skylab"
 
 const Projects = () => {
     return (
@@ -8,6 +9,7 @@ const Projects = () => {
                 <div id="projects-div-header" className="text-uppercase"> Featured Projects </div>
                 <PickupLines />
                 <Weather />
+                <Skylab />
             </div>
         </div>
     )
