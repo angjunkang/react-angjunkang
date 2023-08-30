@@ -50,7 +50,7 @@ const Description = () => {
             </div>
             <div className="description-text col-xl-6 col-lg-12">
                 <div className='description-text-wrapper'>
-                    <p>Hello there, I am Jun Kang, a Year 2 Computer Science student at National University of Singapore.
+                    <p>Hello there, I am Jun Kang, a Final Year Computer Science student at National University of Singapore.
                     </p>
                     <p>I grew up in Singapore and as a child, I was fascinated by computer games and shows that involved programming and software development. I always thought it was cool
                         to be a programmer and would imagine myself, developing a new game or software that will make a big hit and change the world.
