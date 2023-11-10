@@ -1,16 +1,4 @@
-﻿@font-face {
-    font-family: miso-bold;
-    src: url(../fonts/miso-bold/miso-bold-webfont.eot);
-    src: url(../fonts/miso-bold/miso-bold-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/miso-bold/miso-bold-webfont.woff2) format('woff2'), url(../fonts/miso-bold/miso-bold-webfont.woff) format('woff'), url(../fonts/miso-bold/miso-bold-webfont.ttf) format('truetype'), url(../fonts/miso-bold/miso-bold-webfont.svg#svgFontName) format('svg')
-}
-
-@font-face {
-    font-family: miso;
-    src: url(../fonts/miso-regular/miso-regular-webfont.eot);
-    src: url(../fonts/miso-regular/miso-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/miso-regular/miso-regular-webfont.woff2) format('woff2'), url(../fonts/miso-regular/miso-regular-webfont.woff) format('woff'), url(../fonts/miso-regular/miso-regular-webfont.ttf) format('truetype'), url(../fonts/miso-regular/miso-regular-webfont.svg#svgFontName) format('svg')
-}
-
-body,
+﻿body,
 html {
     width: 100%;
     height: 100%;
@@ -21,6 +9,10 @@ html {
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth
+}
+
+.font-italics {
+    font-style: italic;
 }
 
 .header {
@@ -36,12 +28,35 @@ html {
     width: 0%
 }
 
+#menu-nav {
+    text-align: right;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 65px;
+}
+
+#menu-nav.menu-nav-collapse {
+    text-align: right;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 65px;
+    background-color: white;
+}
+
 #navbar {
+    margin: 0 auto;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1100px;
     padding-top: 10px;
     padding-bottom: 10px;
     z-index: 1;
     box-shadow: none;
-    transition: padding-top .3s ease-in-out, padding-bottom .3s ease-in-out
+    transition: padding-top .3s ease-in-out, padding-bottom .3s ease-in-out;
 }
 
 #navbar.navbar-collapse {
@@ -50,22 +65,18 @@ html {
     transition: padding-top .3s ease-in-out, padding-bottom .3s ease-in-out
 }
 
-.navbar-collapse {
-    background-color: #FFF
-}
-
 .nav-item {
     display: inline-block;
-    font-family: miso, sans-serif;
-    color: #222;
-    font-size: 1.75em;
+    font-family: Lato, sans-serif;
+    font-weight: 100;
+    color: #111111;
+    font-size: 16px;
     transition: font-size .3s ease-in-out;
-    letter-spacing: .0125em;
     padding: 0 10px 0 10px
 }
 
 .active-nav-item {
-    font-family: miso-bold, sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 #nav-items {
@@ -76,7 +87,7 @@ html {
 #title-irminrics {
     color: #222;
     font-size: 1.75em;
-    font-family: miso, sans-serif;
+    font-family: Lato, sans-serif;
     letter-spacing: .0125em;
     padding: 8px 0 8px 0
 }
@@ -94,10 +105,6 @@ html {
     background-image: url(../images/irminrics-dp.png);
     margin-left: 8px;
     float: left
-}
-
-.irminrics-link {
-    color: #222;
 }
 
 .irminrics-link:hover {
@@ -139,12 +146,16 @@ html {
     width: 25%
 }
 
+:root {
+    --ti-cursor-font-size: 100px;
+}
+
 .typeText {
     width: 85%;
     text-align: center;
     line-height: 50px;
     height: 70px;
-    font-size: 6em;
+    font-size: 100px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -154,15 +165,17 @@ html {
 .typeText .content {
     display: inline;
     color: #222;
-    font-family: miso, sans-serif
+    font-family: Playfair Display, sans-serif;
+    font-weight: 500;
 }
 
 .intro-description {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 22px;
     width: 60%;
-    font-family: miso, sans-serif;
+    font-family: Lato, sans-serif;
     color: #222;
+    font-weight: 300px
 }
 
 ul {
@@ -183,20 +196,9 @@ li {
     cursor: pointer
 }
 
-.nav-link:after {
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #222;
-    transition: width .5s ease 0s, left .5s ease 0s;
-    width: 0
-}
-
 .nav-link:hover:after {
     width: 100%;
-    left: 0
+    left: 0;
 }
 
 .white-text {
@@ -261,10 +263,12 @@ li {
     padding: 0;
     width: 100%;
     letter-spacing: 01px;
-    font-size: 1.3em;
-    font-family: miso, sans-serif;
+    font-size: 14px;
+    font-family: Lato, sans-serif;
     margin: 0 auto;
     text-align: left;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 #projects-div-header::before {
@@ -292,7 +296,7 @@ li {
 }
 
 .projects-text {
-    font-family: miso, sans-serif;
+    font-family: Lato, sans-serif;
     width: 40%;
     text-align: justify;
     text-justify: inter-word;
@@ -300,20 +304,39 @@ li {
     transition: font-size .3s ease-in-out;
 }
 
-.section-header {
-    font-family: miso-bold, sans-serif;
-    font-size: 2.3em;
-    letter-spacing: .0125em;
+.project-section-header {
+    font-family: Lato, serif;
+    font-weight: 900;
+    font-size: 32px;
+    letter-spacing: .01em;
 }
 
-.description {
+.about-section-header {
+    font-family: Playfair Display, serif;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: .01em;
+}
+
+.project-description {
     color: #888;
     padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.75;
 }
 
+.about-description {
+    color: #888;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
 .projects-badge-swift {
-    font-family: miso-bold, sans-serif;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     color: white;
     padding: 5px 15px;
     width: fit-content;
@@ -323,7 +346,9 @@ li {
 }
 
 .projects-badge-react {
-    font-family: miso-bold, sans-serif;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     color: white;
     padding: 5px 15px;
     width: fit-content;
@@ -334,7 +359,7 @@ li {
 
 .projects-button {
     margin-top: 30px;
-    font-size: 0.8em;
+    font-size: 15px;
 }
 
 .projects-image {
@@ -385,9 +410,10 @@ li {
 }
 
 #contact {
-    font-family: miso-bold, sans-serif;
-    font-size: 3.35em;
+    font-family: Playfair Display, sans-serif;
+    font-size: 44px;
     color: black;
+    font-weight: 900;
 }
 
 #contact:hover {
@@ -400,13 +426,15 @@ li {
 }
 
 .footer-header {
-    font-family: miso, sans-serif;
-    font-size: 1.6em;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    line-height: 1.75;
 }
 
 .footer-text {
-    font-family: miso, sans-serif;
-    font-size: 1.2em;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .social-icons {
@@ -443,10 +471,11 @@ li {
 }
 
 .description-text {
-    font-family: miso, sans-serif;
-    font-size: 1.2em;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
     text-align: justify;
     text-justify: inter-word;
+    line-height: 1.75;
 }
 
 #about-me-picture {
@@ -460,7 +489,7 @@ li {
 }
 
 .education-text {
-    font-family: miso, sans-serif;
+    font-family: Lato, sans-serif;
     text-align: justify;
     text-justify: inter-word;
     font-size: 1em;
@@ -486,7 +515,6 @@ li {
 .education-content {
     min-height: 100px;
     overflow: hidden;
-    padding-top: 20px;
 }
 
 .education-description {
@@ -495,7 +523,9 @@ li {
 
 .about-title {
     margin: 0;
-    font-size: 1.4em;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    margin-top: 30px;
 }
 
 .about-content-left {
@@ -509,7 +539,8 @@ li {
 }
 
 .about-badge {
-    font-family: miso-bold, sans-serif;
+    font-family: Lato, sans-serif;
+    font-size: 14px;
     color: white;
     padding: 5px 15px;
     width: fit-content;
@@ -517,7 +548,6 @@ li {
     margin-right: 10px;
     background-color: #222;
     float: left;
-    font-size: 18px;
 }
 
 .section-badge-div {
@@ -533,54 +563,46 @@ li {
     #portfolio-nav {
         display: none;
     }
+
     #contact-nav {
         display: none;
     }
-    .typeText {
-        font-size: 2.2em;
-        margin-bottom: 20px;
-    }
-    .intro-description {
-        font-size: 1.1em;
-    }
+
     .button {
         font-size: 15px;
     }
-    .nav-item {
-        font-size: 1.5em;
-    }
-    #title-irminrics {
-        font-size: 1.5em;
-        line-height: 48px;
-    }
+
     #about-me-picture {
         width: 100%;
         height: 100%;
         object-fit: cover;
         overflow: hidden;
     }
+
     .description-div {
         padding: 0px;
     }
+
     .description-picture {
         transform: scale(0.75, 0.75);
         -ms-transform: scale(0.75, 0.75);
         -webkit-transform: scale(0.75, 0.75);
         padding: 0;
     }
+
     .description-text {
         font-size: 1em;
         padding-top: -50px;
     }
+
     .section-header {
         font-size: 1.8em;
     }
+
     .education-icon {
         display: none;
     }
-    .description {
-        padding: 0;
-    }
+
     .about-title {
         font-size: 1.15em;
     }
@@ -590,21 +612,49 @@ li {
     #contact {
         font-size: 2.6em;
     }
+
     .footer-div {
         width: 100%;
         font-size: 0.8em;
     }
 }
 
-@media (min-width:682px) and (max-width:870px) {
+@media only screen and (max-width:682px) {
     .typeText {
-        font-size: 3.5em
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    :root {
+        --ti-cursor-font-size: 30px;
+    }
+
+    .intro-description {
+        font-size: 15px;
     }
 }
 
-@media (min-width:870px) and (max-width:1100px) {
+@media (min-width:682px) and (max-width:870px) {
     .typeText {
-        font-size: 5em
+        font-size: 50px;
+    }
+
+    :root {
+        --ti-cursor-font-size: 50px;
+    }
+
+    .intro-description {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:870px) and (max-width:1250px) {
+    .typeText {
+        font-size: 70px;
+    }
+
+    :root {
+        --ti-cursor-font-size: 70px;
     }
 }
 
@@ -612,6 +662,7 @@ li {
     .wallpaper {
         display: none;
     }
+
     .progress-bar {
         display: block;
     }
@@ -629,6 +680,7 @@ li {
     .description-text {
         padding-top: 60px;
     }
+
     .description-picture {
         padding: 0;
     }
@@ -638,6 +690,7 @@ li {
     .about-content-left {
         width: 100%;
     }
+
     .about-content-right {
         width: 100%;
     }
@@ -661,10 +714,6 @@ li {
 @media only screen and (max-width:1010px) {
     .section-header {
         font-size: 1.8em;
-    }
-
-    .description {
-        font-size: 0.9em;
     }
 }
 
@@ -706,7 +755,8 @@ li {
         padding: 0;
         margin-bottom: 50px;
     }
+
+    #menu-nav {
+        background-color: white;
+    }
 }
-
-
-

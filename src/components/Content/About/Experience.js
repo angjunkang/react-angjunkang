@@ -1,5 +1,3 @@
-import CSIT from '../../../images/csit-icon.png'
-import CROW from '../../../images/crow-icon.png'
 import { useState, useEffect } from 'react'
 
 const Experience = () => {
@@ -21,22 +19,22 @@ const Experience = () => {
     return (
         <div className={`education-div fadeIn ${isVisible ? 'visible' : ''}`} >
             <div className="education-text left">
-                <h3 className="section-header">Experience</h3>
-                <Company company={"Centre for Strategic Infocomm Technologies"} image={CSIT} description={"Bonded Internship"} date={"May 2018 - Jul 2018"} />
-                <Company company={"Cyber Security Researchers of Waikato"} image={CROW} description={"Overseas Internship Programme"} date={"Mar 2018 - May 2018"} />
+                <h3 className="about-section-header">Experience</h3>
+                <Company company={"ST Engineering"} description={"Internship"} date={"May 2023 - Jul 2023"} />
+                <Company company={"Centre for Strategic Infocomm Technologies"} description={"Bonded Internship"} date={"May 2018 - Jul 2018"} />
+                <Company company={"Cyber Security Researchers of Waikato"} description={"Overseas Internship Programme"} date={"Mar 2018 - May 2018"} />
             </div>
         </div>
     )
 }
 
-const Company = ({ company, image, description, date }) => {
+const Company = ({ company, description, date }) => {
     return (
         <div className="education-content">
-            <img className='education-icon left' src={image} alt="" />
             <div className='education-description'>
                 <p className="about-title">{company}</p>
-                <div className="description">{description}
-                    <p>{date}</p> </div>
+                <div className="about-description">{description} • <span className="font-italics">{date}</span>
+                </div>
             </div>
         </div>
     )

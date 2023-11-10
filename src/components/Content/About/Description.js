@@ -1,66 +1,27 @@
 import DisplayPicture from '../../../images/about-me-irminrics.png'
-import { useState, useEffect } from 'react'
-
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-        width,
-        height
-    };
-}
-
-function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimensions(getWindowDimensions());
-        }
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return windowDimensions;
-}
 
 const Description = () => {
-    const [isVisible, setVisible] = useState(false);
-    const { width } = useWindowDimensions();
-
-    useEffect(() => {
-        const position = window.pageYOffset;
-        setVisible(position);
-
-        window.addEventListener("scroll", () => {
-            setVisible(window.scrollY > 50);
-        });
-
-        return () => {
-            setVisible({});
-        };
-        
-    }, []);
-    
     return (
-        <div className={`description-div row fadeIn ${isVisible || width < 905  ? 'visible' : ''}`} >
+        <div className={`description-div row fadeIn visible`} >
             <div className="description-header"></div>
             <div className="description-picture col-xl-6 col-lg-12">
                 <img src={DisplayPicture} alt="Jun Kang's DP" id="about-me-picture" />
             </div>
             <div className="description-text col-xl-6 col-lg-12">
                 <div className='description-text-wrapper'>
-                    <p>Hello there, I am Jun Kang, a Final Year Computer Science student at National University of Singapore.
+                    <p>Greetings! I'm Jun Kang, a final-year Computer Science student at National University of Singapore.
                     </p>
-                    <p>I grew up in Singapore and as a child, I was fascinated by computer games and shows that involved programming and software development. I always thought it was cool
-                        to be a programmer and would imagine myself, developing a new game or software that will make a big hit and change the world.
-                        This ultimately led me towards Nanyang Polytechnic to pursue a Diploma in Information Technology.</p>
-                    <p>With broad exposure to the computing field, I realize programming is such a powerful tool and
-                        brings limitless possibilities. It has power to solve complex problems with automated solutions
-                        and even to bring ideas from the brain to life. With modern libraries, coding languages, and
+                    <p>My journey into the world of technology began in Singapore, where as a child, I found myself captivated by computer games and television shows centered 
+                        around programming and software development. The allure of being a programmer fascinated me, and I often envisioned myself creating groundbreaking games or 
+                        software that could potentially change the world. This early fascination set me on a path to Nanyang Polytechnic, where I pursued a 
+                        Diploma in Information Technology.</p>
+                    <p>Through my educational journey, it became apparent to me that programming is an immensely powerful tool, offering boundless possibilities. 
+                        It has the capability to address intricate problems through automated solutions and turn creative ideas into reality. With modern libraries, coding languages, and
                         operating systems developing even as you are reading this, learning in this field is a
-                        never-ending journey. This is what affirmed my deep passion and interest in the computing field.
-                    </p>
+                        never-ending journey.</p>
+                    <p>This realization solidified my deep passion and interest in the computing field. Today, as I near the completion of my degree, 
+                        I am eager to explore new horizons and apply my skills in practical scenarios. I firmly believe in the transformative potential of technology 
+                        and its ability to shape a better future.</p>
                     <p>Feel free to contact me if you would like to collaborate or discuss possibilities!</p>
                 </div>
             </div>

@@ -19,7 +19,7 @@ const Skills = () => {
     return (
         <div className={`education-div fadeIn ${isVisible ? 'visible' : ''}`} >
             <div className="education-text left">
-                <h3 className="section-header">Skills</h3>
+                <h3 className="about-section-header">Skills</h3>
                 <div className="education-content">
                     <div className="section-badge-div">
                         <p className="about-title">General</p>
@@ -33,6 +33,8 @@ const Skills = () => {
                             <h5 className="about-badge">Kotlin</h5>
                             <h5 className="about-badge">C#</h5>
                             <h5 className="about-badge">C++</h5>
+                            <h5 className="about-badge">Appian</h5>
+
                         </div>
                     </div>
                     <div className="section-badge-div mt-3">
@@ -42,6 +44,8 @@ const Skills = () => {
                             <h5 className="about-badge">MySQL</h5>
                             <h5 className="about-badge">Redis</h5>
                             <h5 className="about-badge">MongoDB</h5>
+                            <h5 className="about-badge">MariaDB</h5>
+
                         </div>
                     </div>
                     <div className="section-badge-div mt-3">
