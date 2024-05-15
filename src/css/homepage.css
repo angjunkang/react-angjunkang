@@ -84,7 +84,7 @@ html {
     color: #222
 }
 
-#title-irminrics {
+#title-angjunkang {
     color: #222;
     font-size: 1.75em;
     font-family: Lato, sans-serif;
@@ -101,13 +101,13 @@ html {
     background-size: cover
 }
 
-.irminrics-dp {
-    background-image: url(../images/irminrics-dp.png);
+.angjunkang-dp {
+    background-image: url(../images/angjunkang-dp.png);
     margin-left: 8px;
     float: left
 }
 
-.irminrics-link:hover {
+.angjunkang-link:hover {
     color: #222;
 }
 

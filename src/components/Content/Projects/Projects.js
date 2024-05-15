@@ -1,6 +1,7 @@
 import PickupLines from "./PickupLines"
 import Weather from "./Weather"
 import Skylab from "./Skylab"
+import PeerPrep from "./PeerPrep"
 
 const Projects = () => {
     return (
@@ -10,6 +11,7 @@ const Projects = () => {
                 <PickupLines />
                 <Weather />
                 <Skylab />
+                <PeerPrep />
             </div>
         </div>
     )

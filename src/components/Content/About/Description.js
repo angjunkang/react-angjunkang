@@ -1,4 +1,4 @@
-import DisplayPicture from '../../../images/about-me-irminrics.png'
+import DisplayPicture from '../../../images/about-me-angjunkang.png'
 
 const Description = () => {
     return (

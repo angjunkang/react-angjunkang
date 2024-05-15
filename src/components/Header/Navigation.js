@@ -55,9 +55,9 @@ const Navigation = ({ isMainPage }) => {
     return (
         <div id="menu-nav" className={`${scroll ? 'menu-nav-collapse' : ''}`}>
             <nav id="navbar" className={`navbar navbar-light darken-4 fixed-top ${scroll ? 'navbar-collapse' : ''}`}>
-                <div id="title-irminrics" className={`navbar-brand ${isMainPage || scroll || width < 905 ? '' : 'white-text'}`} onClick={scrollToTop}>
-                    <LinkNav to="/" className={`irminrics-link ${isMainPage || scroll || width < 905 ? '' : 'white-text'}`}>
-                        <div className="icon irminrics-dp" />
+                <div id="title-angjunkang" className={`navbar-brand ${isMainPage || scroll || width < 905 ? '' : 'white-text'}`} onClick={scrollToTop}>
+                    <LinkNav to="/" className={`angjunkang-link ${isMainPage || scroll || width < 905 ? '' : 'white-text'}`}>
+                        <div className="icon angjunkang-dp" />
                     </LinkNav>
                 </div>
                 <div id="nav-container-right">
