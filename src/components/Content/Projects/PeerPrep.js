@@ -21,9 +21,9 @@ const Skylab = () => {
         <div className={`projects-container fadeIn ${isVisible ? 'visible' : ''}`} >
             <div className="projects-text right">
                 <h3 className="project-section-header">PeerPrep</h3>
-                <p className="project-description">PeerPrep is an innovative platform designed to enhance your learning journey through collaborative preparation. Whether you're gearing up for exams, mastering a new subject, or simply quenching your thirst for knowledge, PeerPrep is here to make the process interactive, effective, and enjoyable.</p>
+                <p className="project-description">PeerPrep is an innovative platform designed to enhance your coding learning journey through collaborative preparation. Whether you're gearing up for exams or mastering a new langyage, PeerPrep is here to make the process interactive and enjoyable.</p>
                 <h5 className="projects-badge-react">React</h5>
-                <div className="projects-button"><a className='button' href="https://github.com/Irminrics/orbital-project" target='_blank' rel='noopener noreferrer'>Find out more</a></div>
+                <div className="projects-button"><a className='button' href="https://github.com/angjunkang/peerprep" target='_blank' rel='noopener noreferrer'>Find out more</a></div>
             </div>
             <div className='projects-image left'>
                 <img className='site' alt="Skylab Screenshot" src={PeerPrepImage} />
