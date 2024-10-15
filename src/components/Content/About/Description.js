@@ -9,7 +9,7 @@ const Description = () => {
             </div>
             <div className="description-text col-xl-6 col-lg-12">
                 <div className='description-text-wrapper'>
-                    <p>Greetings! I'm Jun Kang, a final-year Computer Science student at National University of Singapore.
+                    <p>Greetings! I'm Jun Kang, a Cybersecurity Engineer at DSTA.
                     </p>
                     <p>My journey into the world of technology began in Singapore, where as a child, I found myself captivated by computer games and television shows centered 
                         around programming and software development. The allure of being a programmer fascinated me, and I often envisioned myself creating groundbreaking games or 

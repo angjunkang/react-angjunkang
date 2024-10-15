@@ -20,7 +20,7 @@ const Education = () => {
         <div className={`education-div fadeIn ${isVisible ? 'visible' : ''}`} >
             <div className="education-text left">
                 <h3 className="about-section-header">Education</h3>
-                <Schools school={"National University of Singapore"} description={"Bachelor of Computing (Honours) in Computer Science"} date={"Aug 2021 - Present"} />
+                <Schools school={"National University of Singapore"} description={"Bachelor of Computing (Honours) in Computer Science"} date={"Aug 2021 - Aug 2024"} />
                 <Schools school={"Nanyang Polytechnic"} description={"Diploma in Information Technology w Merit"} date={"Apr 2016 - Apr 2019"} />
             </div>
         </div>
