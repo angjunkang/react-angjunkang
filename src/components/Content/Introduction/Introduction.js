@@ -9,7 +9,7 @@ const Introduction = () => {
                     <div className="typeText">
                         <TypeItContent />
                     </div>
-                    <span className="intro-description">I am currently a Cybersecurity Engineer at DSTA.
+                    <span className="intro-description">I am a Cybersecurity Engineer at DSTA.
                     </span>
                     <br />
                     <br />
